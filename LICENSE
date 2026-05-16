@@ -1,0 +1,69 @@
+=============================================================================
+LICENSING TERMS / TÉRMINOS DE LICENCIAMIENTO - LEARNARMS VR
+=============================================================================
+
+[ENGLISH]
+This project utilizes a hybrid licensing scheme due to the nature of its components:
+
+1. WEBSITE SOURCE CODE (Astro / Frontend)
+-----------------------------------------------------------------------------
+The website source code contained in this repository is distributed under 
+the MIT LICENSE (see text at the end of this document).
+
+2. COMPILED APPLICATION (.apk file / VR Simulator)
+-----------------------------------------------------------------------------
+The executable file (APK) provided in the "Releases" section is distributed 
+under a free, Educational and Non-Commercial Freeware license.
+
+APK Terms:
+- Permitted: Download, installation, and use for educational, research, 
+  technical demonstration, or personal entertainment purposes.
+- Prohibited: Commercial exploitation, sale, distribution on paid platforms, 
+  as well as reverse engineering or decompilation of the binary without 
+  express authorization from the author.
+
+-----------------------------------------------------------------------------
+
+[ESPAÑOL]
+Este proyecto utiliza un esquema de licenciamiento híbrido debido a la naturaleza 
+de sus componentes:
+
+1. CÓDIGO FUENTE DEL SITIO WEB (Astro / Frontend)
+-----------------------------------------------------------------------------
+El código de la página web contenido en este repositorio se distribuye bajo 
+la LICENCIA MIT (ver texto al final de este documento).
+
+2. APLICACIÓN COMPILADA (Archivo .apk / Simulador VR)
+-----------------------------------------------------------------------------
+El archivo ejecutable (APK) provisto en la sección de "Releases" se distribuye 
+bajo una licencia de Software Gratuito (Freeware) de Uso Académico y No Comercial.
+
+Términos del APK:
+- Permitido: Su descarga, instalación y uso con fines educativos, de investigación, 
+  demostración técnica o entretenimiento personal.
+- Prohibido: Su explotación comercial, venta, distribución en plataformas de pago, 
+  así como técnicas de ingeniería inversa o descompilación del binario sin la 
+  autorización expresa del autor.
+
+=============================================================================
+MIT LICENSE TEXT (For website source code / Para el código web)
+=============================================================================
+Copyright (c) 2026 Elias Zapata
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

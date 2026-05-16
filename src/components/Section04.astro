@@ -19,6 +19,8 @@ const t = useTranslations(lang);
 
     <a 
       href={external_links("github_project")} 
+      target="_blank" 
+      rel="noopener noreferrer"
       class="index_get_started_buttons"
     >
       <Icon name="download" class="w-6 h-6" />
@@ -26,7 +28,41 @@ const t = useTranslations(lang);
         <span class="block text-xs opacity-75">
           {t('Section04.btn.apk')}
         </span>
-        <span class="block uppercase tracking-wider">APK</span>
+        <span class="block uppercase tracking-wider">APK (Release)</span>
+      </div>
+    </a>
+
+    <!-- <a 
+      href={external_links("sidequest_link")} 
+      target="_blank" 
+      rel="noopener noreferrer"
+      class="index_get_started_buttons"
+    >
+      <Icon name="download" class="w-6 h-6" />
+      <div class="text-left leading-tight">
+        <span class="block text-xs opacity-75">
+          SideQuest
+        </span>
+        <span class="block uppercase tracking-wider">
+          {t('Section04.btn.website')}
+        </span>
+      </div>
+    </a> -->
+
+    <a 
+      href={external_links("itchio_link")} 
+      target="_blank" 
+      rel="noopener noreferrer"
+      class="index_get_started_buttons"
+    >
+      <Icon name="download" class="w-6 h-6" />
+      <div class="text-left leading-tight">
+        <span class="block text-xs opacity-75">
+          Itch.io
+        </span>
+        <span class="block uppercase tracking-wider">
+          {t('Section04.btn.website')}
+        </span>
       </div>
     </a>
   </div>

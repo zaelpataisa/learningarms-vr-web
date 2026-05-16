@@ -32,6 +32,7 @@ export const ui = {
 
     'Section04.title': 'Download Links',
     'Section04.btn.apk': 'DOWNLOAD (Only Spanish)',
+    'Section04.btn.website': 'External Website',
 
     'footer.license': 'MIT License.',
   },
@@ -62,6 +63,7 @@ export const ui = {
 
     'Section04.title': 'Enlaces de Descarga',
     'Section04.btn.apk': 'DESCARGAR',
+    'Section04.btn.website': 'Página Web Externa',
 
     'footer.license': 'Licencia MIT.',
   },
