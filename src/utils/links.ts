@@ -4,7 +4,7 @@ export const external_links = (link_name: string) => {
 
   switch (url) {
     case "website_path":
-      return "https://learningarms-vr.vercel.app"
+      return "https://learningarms-vr-web.vercel.app"
       break;
 
     case "github_profile":
@@ -16,11 +16,11 @@ export const external_links = (link_name: string) => {
       break;
 
     case "video_demo_link":
-      return "https://www.youtube.com/watch?v=PS7XskfmW84"
+      return "https://www.youtube.com/shorts/uS6cHjPppiw"
       break;
 
     case "video_demo_play":
-      return "https://www.youtube.com/embed/PS7XskfmW84"
+      return "https://www.youtube.com/shorts/uS6cHjPppiw"
       break;
 
     case "sidequest_link":
