@@ -1,0 +1,31 @@
+---
+import Icon from "./Icon.astro";
+import { actualYear } from "../utils/date.utils"
+import { external_links } from "../utils/links";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<footer class="reveal-on-scroll border-t border-(--colors-07)/10 py-8 px-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-mono text-(--colors-04) max-w-7xl mx-auto w-full">
+  <div class="flex items-center gap-4">
+    <div class="p-1 border border-(--colors-01) flex items-center justify-center rounded bg-(--colors-05)/50">
+      <Icon name="unity" class="w-6 h-6 text-(--colors-01)" />
+    </div>
+    <p class="text-sm">
+      © {actualYear} LearnArms VR. {t('footer.license')}
+    </p>
+  </div>
+  
+  <div class="flex gap-6">
+    <a 
+      href={external_links("github_profile")} 
+      target="_blank" 
+      rel="noopener noreferrer"
+      class="footer_social_media_icons"
+    >
+      <Icon name="github" class="w-8 h-8" />
+    </a>
+  </div>
+</footer>

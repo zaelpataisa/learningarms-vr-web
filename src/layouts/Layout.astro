@@ -1,0 +1,63 @@
+---
+import "../styles/global.css";
+import "../styles/definedStyles.css";
+import { getLangFromUrl } from "../i18n/utils";
+import { external_links } from "../utils/links";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { 
+  title = "LearnArms VR",
+  description = "¡Explora los fundamentos básicos de la física y la mecánica unidos a la robótica mientras te sumerges en un mundo de Realidad Virtual!",
+} = Astro.props
+
+const lang = getLangFromUrl(Astro.url);
+
+const canonicalURL = new URL(Astro.url.pathname, external_links("website_path"));
+---
+
+<!DOCTYPE html>
+<html lang={lang}>
+	<head>
+    <meta charset="UTF-8"/ >
+    <meta name="description" content={description} />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="@zael_aisa" />
+    <meta name="copyright" content="@zael_aisa" />
+    <meta name="robots" content="index,follow"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=NO" />
+
+    <!-- --------- SEO --------- -->
+    <link rel="alternate" hreflang="en" href={`${external_links("website_path")}`} />
+    <link rel="alternate" hreflang="es" href={`${external_links("website_path")}/es`} />
+    <link rel="alternate" hreflang="x-default" href={`${external_links("website_path")}`} />
+    <link rel="canonical" href={canonicalURL} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="/banner.webp" />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content="/banner.webp" />
+    <!-- ----------------------- -->
+
+		<title>{title}</title>
+		<link rel="icon" type="image/svg+xml" href="/logo.webp" />
+    <!-- --------------------------------------------------------- -->
+	</head>
+	<body>
+    <slot />
+
+    <script>
+      import "../utils/observer_scroller.ts"; 
+    </script>
+	</body>
+</html>

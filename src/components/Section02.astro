@@ -1,0 +1,90 @@
+---
+import Icon from "./Icon.astro";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<section class="reveal-on-scroll max-w-6xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-16">
+  <div>
+    <p class="text-(--colors-07) font-semibold mb-2">
+      {t('Section02.title')}
+    </p>
+    
+    <div class="w-56 h-1 bg-(--colors-01) mb-8 rounded-r-sm"></div>
+    
+    <p class="text-(--colors-04) text-sm leading-relaxed mb-4">
+      {t('Section02.p1')}
+    </p>
+    <p class="text-(--colors-04) text-sm leading-relaxed mb-4">
+      {t('Section02.p2')}
+    </p>
+    <p class="text-(--colors-04) text-sm leading-relaxed mb-8">
+      {t('Section02.p3')}
+    </p>
+
+    <ul class="space-y-4 text-(--colors-07) text-sm font-mono">
+      <li class="index_categories_li">
+        <Icon name="check" class="w-4 h-4 text-(--colors-01)" /> 
+        {t('Section02.categories.item1')}
+      </li>
+      <li class="index_categories_li">
+        <Icon name="check" class="w-4 h-4 text-(--colors-01)" /> 
+        {t('Section02.categories.item2')}
+      </li>
+      <li class="index_categories_li">
+        <Icon name="check" class="w-4 h-4 text-(--colors-01)" /> 
+        {t('Section02.categories.item3')}
+      </li>
+      <li class="index_categories_li">
+        <Icon name="check" class="w-4 h-4 text-(--colors-01)" /> 
+        {t('Section02.categories.item4')}
+      </li>
+      <li class="index_categories_li">
+        <Icon name="check" class="w-4 h-4 text-(--colors-01)" /> 
+        {t('Section02.categories.item5')}
+      </li>
+    </ul>
+  </div>
+
+  <div class="bg-(--colors-06) border border-(--colors-07)/5 p-8 rounded-sm">
+    <p class="text-(--colors-01) text-md font-black mb-6">
+      {t('Section02.requeriments.title')}
+    </p>
+    <hr class="border-(--colors-07)/5 mb-8" />
+    
+    <div class="flex items-center gap-4 mb-10">
+      <img 
+        src="/meta_quest_2.webp" 
+        alt="Meta Quest 2 Headset"
+        class="h-12 w-auto object-contain" 
+        loading="eager" 
+      >
+      <p class="text-(--colors-07) text-lg font-bold">
+        Meta Quest 2
+      </p>
+    </div>
+
+    <ul class="space-y-6 text-(--colors-04) text-sm">
+      <li class="flex items-center gap-4">
+        <div class="index_requeriments_li">
+          <Icon name="check" class="w-5 h-5 text-(--colors-01)" />
+        </div>
+        {t('Section02.requeriments.item1')}
+      </li>
+      <li class="flex items-center gap-4">
+        <div class="index_requeriments_li">
+          <Icon name="hand" class="w-5 h-5 text-(--colors-01)" />
+        </div>
+        {t('Section02.requeriments.item2')}
+      </li>
+      <li class="flex items-center gap-4">
+        <div class="index_requeriments_li">
+          <Icon name="lightning" class="w-5 h-5 text-(--colors-01)" />
+        </div>
+        {t('Section02.requeriments.item3')}
+      </li>
+    </ul>
+  </div>
+</section>

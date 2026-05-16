@@ -1,0 +1,27 @@
+---
+import { external_links } from "../utils/links";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+---
+
+<section
+  id="section03"
+  class="reveal-on-scroll max-w-5xl mx-auto px-8 w-full text-center"
+>
+  <p class="text-(--colors-07) text-lg font-bold mb-8">
+    {t('Section03.title')}
+  </p>
+  <div class="aspect-video w-full max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl border border-(--colors-07)/10 bg-(--colors-05)">
+    <iframe 
+      class="w-full h-full"
+      src={external_links("video_demo_play")}
+      title="LearningArms VR Demo" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin" 
+      allowfullscreen
+    ></iframe>
+  </div>
+</section>
