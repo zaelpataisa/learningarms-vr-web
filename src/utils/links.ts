@@ -20,7 +20,7 @@ export const external_links = (link_name: string) => {
       break;
 
     case "video_demo_play":
-      return "https://www.youtube.com/shorts/uS6cHjPppiw"
+      return "https://youtube.com/shorts/uS6cHjPppiw?feature=share"
       break;
 
     case "sidequest_link":
